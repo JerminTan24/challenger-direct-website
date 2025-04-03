@@ -1,13 +1,102 @@
+/* src/index.css */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Custom background color class */
+.bg-brand-blue {
+  /* Adjust this hex code to the exact dark blue from the design */
+  background-color: #001f5a !important; /* Use !important to override Bootstrap if needed */
+}
+.bg-brand-blue-darker {
+  /* A slightly darker variant if needed */
+  background-color: #00143d !important;
+}
+
+/* Optional: Adjust default Bootstrap primary color if desired globally (Requires Sass setup) */
+/* Or just use .bg-brand-blue and text-white where needed */
+
+/* Ensure sections have sufficient padding */
+section {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+/* Specific styling for white text on dark background links */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85); /* Slightly dimmed white for non-active links */
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+
+/* Custom button style for white background on dark sections */
+.btn-light-custom {
+    background-color: #fff;
+    border-color: #fff;
+    color: #001f5a; /* Use your brand blue or black */
+    font-weight: 500;
+    border-radius: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.btn-light-custom:hover {
+    background-color: #f8f9fa; /* Slightly off-white on hover */
+    border-color: #f8f9fa;
+    color: #00143d;
+}
+
+.btn-outline-light-custom {
+    color: #6c757d; /* Muted text color */
+    border-color: #dee2e6; /* Light border */
+    background-color: #fff;
+}
+.btn-outline-light-custom:hover {
+    color: #343a40;
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+}
+
+/* Add spacing to react-icons used with text */
+svg.inline-icon {
+    margin-left: 0.5em; /* Adjust spacing as needed */
+    vertical-align: middle; /* Align icon nicely with text */
+}
+
+/* Style for partner logos */
+.partner-logo {
+  max-height: 40px; /* Adjust size as needed */
+  width: auto;
+  filter: grayscale(100%) brightness(1000%); /* Make logos white */
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+  margin: 0 1rem; /* Spacing between logos */
+}
+.partner-logo:hover {
+  opacity: 1;
+}
+
+/* Why Buy Section icon styles */
+.why-buy-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem; /* Space below icon */
+}
+
+.why-buy-icon-wrapper svg {
+    width: 32px;
+    height: 32px;
+    color: #fff;
 }
