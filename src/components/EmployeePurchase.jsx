@@ -12,7 +12,7 @@ const EmployeePurchase = () => {
             <p className="text-muted mb-4">
               Exclusive employee discounts on laptops, phones, accessories, and more at special corporate rates.
             </p>
-            <Button variant="primary" href="#epp-learn-more">
+            <Button href="#learn-more" variant="primary" size="lg" className="btn-blue-custom">
                LEARN MORE <FiArrowRight className="inline-icon"/>
             </Button>
           </Col>

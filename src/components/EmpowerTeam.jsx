@@ -4,9 +4,9 @@ import { FiArrowRight } from 'react-icons/fi';
 
 const EmpowerTeam = () => {
   return (
-    <section className="text-center">
+    <section className="text-center mb-10">
       <Container>
-        <h2 className="fw-bold mb-3">Empower Your Team with the Right Tech</h2>
+        <h2 className="fw-bold mb-4">Empower Your Team with the Right Tech</h2>
         <p className="text-muted mb-4 mx-auto" style={{ maxWidth: '600px' }}>
           From workstations to the field, we provide the latest tech solutions to keep your business moving forward.
         </p>

@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.text-x-small {
+  font-size: 0.85rem;
+}
+
 /* Custom background color class */
 .bg-brand-blue {
   /* Adjust this hex code to the exact dark blue from the design */
@@ -42,10 +46,14 @@ section {
     background-color: #fff;
     border-color: #fff;
     color: #001f5a; /* Use your brand blue or black */
-    font-weight: 500;
+    font-weight: 700;
+    font-size: medium;
     border-radius: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 24px;
 }
 .btn-light-custom:hover {
     background-color: #f8f9fa; /* Slightly off-white on hover */
@@ -57,11 +65,38 @@ section {
     color: #6c757d; /* Muted text color */
     border-color: #dee2e6; /* Light border */
     background-color: #fff;
+    font-weight: 700;
+    font-size: medium;
+    border-radius: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 24px;
 }
 .btn-outline-light-custom:hover {
     color: #343a40;
     background-color: #f8f9fa;
     border-color: #dee2e6;
+}
+
+.btn-blue-custom {
+  color: #fff; /* Muted text color */
+  border-color: #dee2e6; /* Light border */
+  background-color: #306FDB;
+  font-weight: 700;
+  font-size: medium;
+  border-radius: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 24px;
+}
+.btn-outline-light-custom:hover {
+  color: #343a40;
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
 }
 
 /* Add spacing to react-icons used with text */
@@ -77,7 +112,7 @@ svg.inline-icon {
   filter: grayscale(100%) brightness(1000%); /* Make logos white */
   opacity: 0.7;
   transition: opacity 0.2s ease-in-out;
-  margin: 0 1rem; /* Spacing between logos */
+  margin: 0 1.5rem; /* Spacing between logos */
 }
 .partner-logo:hover {
   opacity: 1;
@@ -99,4 +134,5 @@ svg.inline-icon {
     width: 32px;
     height: 32px;
     color: #fff;
+    margin-top: 18px;
 }

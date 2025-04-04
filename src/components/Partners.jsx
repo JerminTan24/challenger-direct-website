@@ -29,7 +29,7 @@ const Partners = () => {
 // ... partnerLogos definition ...
 const partnerLogos = [
   { name: 'Dell',      src: '/logos/dell.png',      alt: 'Dell Logo' },
-  { name: 'Microsoft', src: '/logos/microsoft.png', alt: 'Microsoft Logo' },
+  { name: 'Microsoft', src: '/logos/ms.png', alt: 'Microsoft Logo' },
   { name: 'Samsung',   src: '/logos/samsung.png',   alt: 'Samsung Logo' },
   { name: 'Lenovo',    src: '/logos/lenovo.png',    alt: 'Lenovo Logo' },
   { name: 'Apple',     src: '/logos/apple.png',     alt: 'Apple Logo' },

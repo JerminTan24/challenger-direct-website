@@ -23,7 +23,7 @@ const Solutions = () => {
   return (
     <section className="bg-light">
       <Container>
-        <h2 className="text-center mb-5 fw-bold">Solutions For Every Enterprise</h2>
+        <h2 className="text-center mb-4 fw-bold">Solutions For Every Enterprise</h2>
         <p className="text-center text-muted mb-5 mx-auto" style={{ maxWidth: '700px' }}>
           Singapore's trusted provider of IT solutions, devices, and accessories. Offering exclusive corporate pricing and the widest selection of over 50,000 tech products.
         </p>
